@@ -1,0 +1,142 @@
+h1 {
+   font-family: 'VT323', ;
+   text-align: center;
+}
+h4 {
+   font-family: 'VT323', ;
+   text-align: center;
+}
+h2, h3, h5 {
+   font-family: 'VT323', ;
+   text-align: center;
+}
+body {
+   font-family: 'Inconsolata', ;
+   font-size: 1.7rem;
+}
+a {
+   text-decoration: none;
+   font-family: 'Inconsolata', ;
+}
+a.tooltip,
+a.popup {
+    position: relative;
+    color: brown;
+    white-space:normal;
+    width: 200px;
+}
+
+a.tooltip::before {
+    content: attr(data-tip);
+    width: 300px;
+    position: absolute;
+    display: none;
+    z-index: 999;
+    top: 25px;
+    left: -50%;
+    background: #ffffff;
+    color: #3d3a3a;
+    padding: 15px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+}
+
+a.tooltip:hover::before {
+    display: inline-block;
+    white-space:normal;
+    opacity: 1;
+}
+.header {
+   margin-top: 5rem;
+   text-align: center;
+   margin-left: 15%;
+   margin-right: 15%;
+   border-bottom: 1px inset black;
+}
+.value-img {
+   display: block;
+   text-align: center;
+   margin: auto;
+   margin-bottom: 50px;
+   height: 80px;
+   width: 260px;
+}
+.value-prop {
+   margin-top: 1rem;
+}
+.input {
+   display: block;
+   text-align: center;
+   margin: auto;
+   margin-bottom: 40px;
+   padding-top: 40px;
+   border-top: 1px inset black;
+   border-bottom: 1px inset black;
+}
+.value-props {
+   margin-top: 4rem;
+   margin-bottom: 4rem;
+}
+.navbar, .navbar-spacer {
+   display: block;
+   width: 80%;
+   height: 3.5rem;
+   background: #fff;
+}
+.navbar-spacer {
+   display: none;
+}
+.navbar > .container {
+   width: 75%;
+}
+.navbar-list {
+   list-style: none;
+   margin-bottom: 0;
+   /*border-bottom: 1px solid #1c1c1c;*/
+}
+.navbar-item {
+   display: inline;
+   text-align: center;
+   margin-bottom: 0;
+}
+.navbar-link {
+   text-transform: uppercase;
+   font-size: 0.9em;
+   font-weight: 600;
+   font-family: 'Inconsolata', ;
+   letter-spacing: .2rem;
+   margin-right: 2px;
+   margin-left: 9%;
+   text-decoration: none;
+   line-height: 6.5rem;
+   color: #1c1c1c;
+}
+.navbar-link.active {
+   color: #009688;
+}
+.docs-header {
+   text-transform: uppercase;
+   font-size: 2.5rem;
+   letter-spacing: .2rem;
+   font-weight: 600;
+   font-family: 'VT323', ;
+}
+.docs-section {
+   padding: 4rem 0;
+   margin-bottom: 0;
+   font-size: 2rem;
+   font-family: 'VT323', ;
+}
+.docs-section-center {
+   text-align: center;
+   width: 70%;
+   padding: 4rem 0;
+   margin-top: 80px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: auto;
+}
+.hmtl {
+   text-align: center;
+}
